@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res/com.xy.slidingdrawer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.xy.slidingdrawer.MultiDirectionSlidingDrawer
+        android:id="@+id/drawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content1"
+        my:direction="leftToRight"
+        my:handle="@+id/handle" 
+        >
+
+        <include
+            android:id="@id/content1"
+            layout="@layout/pen_content" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:src="@drawable/right" />
+    </com.xy.slidingdrawer.MultiDirectionSlidingDrawer>
+    <com.xy.slidingdrawer.MultiDirectionSlidingDrawer
+        android:id="@+id/drawer2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content2"
+        my:direction="rightToLeft"
+        my:handle="@+id/handle" 
+        >
+
+        <include
+            android:id="@id/content2"
+            layout="@layout/pen_content" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:src="@drawable/left" />
+    </com.xy.slidingdrawer.MultiDirectionSlidingDrawer>
+    <com.xy.slidingdrawer.MultiDirectionSlidingDrawer
+        android:id="@+id/drawer3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content3"
+        my:direction="topToBottom"
+        my:handle="@+id/handle" 
+        >
+
+        <include
+            android:id="@id/content3"
+            layout="@layout/pen_content" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:src="@drawable/bottom" />
+    </com.xy.slidingdrawer.MultiDirectionSlidingDrawer>
+    <com.xy.slidingdrawer.MultiDirectionSlidingDrawer
+        android:id="@+id/drawer4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content4"
+        my:direction="bottomToTop"
+        my:handle="@+id/handle" 
+        >
+
+        <include
+            android:id="@id/content4"
+            layout="@layout/pen_content" />
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:src="@drawable/top" />
+    </com.xy.slidingdrawer.MultiDirectionSlidingDrawer>
+
+</RelativeLayout>

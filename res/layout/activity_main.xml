@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SlidingDrawer  
+        android:id="@+id/slidingdrawer"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:content="@+id/SettingContent"  
+        android:handle="@+id/sliding_switch"  
+        
+        android:orientation="vertical" >  
+  
+        <ImageButton  
+            android:id="@id/sliding_switch"  
+            android:layout_width="50dip"  
+            android:layout_height="44dip"  
+            android:src="@drawable/ic_launcher" />  
+  
+        <ImageView  
+            android:id="@id/SettingContent"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:gravity="center"
+            android:src="@drawable/pic"/>  
+    </SlidingDrawer> 
+    <SlidingDrawer  
+        android:id="@+id/slidingdrawer_rignt"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:content="@+id/SettingContent_rignt"  
+        android:handle="@+id/sliding_switch_rignt"  
+        
+        android:orientation="horizontal" >  
+  
+        <ImageButton  
+            android:id="@id/sliding_switch_rignt"  
+            android:layout_width="50dip"  
+            android:layout_height="44dip"  
+            android:src="@drawable/ic_launcher" />  
+  
+        <ImageView  
+            android:id="@id/SettingContent_rignt"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:gravity="center"
+            android:src="@drawable/pic"/>  
+    </SlidingDrawer> 
+
+</RelativeLayout>
